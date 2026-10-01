@@ -1,0 +1,82 @@
+    <header>
+        <a href="#">
+            <img src="/src/assets/logo.png" alt="logo.png">
+        </a>
+        <div class="navigation-div">
+            <a class="navigation-component" href="#">Projects</a>
+            <a class="navigation-component" href="#">About</a>
+            <a class="navigation-component" href="#">Digital Assets</a>
+            <div class="burger-div">
+                <button class="burger-active">Let’s Talk</button>
+                <a class="img-menu" href="#"><img src="/src/assets/menu.png" alt="menu.png"></a>
+            </div>
+            
+        </div>
+    </header>
+    <style>
+        header{
+            width: 100%;
+            height: 89px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+        .navigation-div{
+            width: 600px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navigation-component{
+            color: #2D2C2C;
+            font-size: 16px;
+            font-family: "Epilogue", sans-serif;
+            text-decoration: none;
+        }
+        .burger-active{
+            width: 111px;
+            height: 40px;
+            background-color: #2D2C2C;
+            font-size: 16px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .img-menu{
+            display: none;
+        }
+        .burger-div{
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        @media  (max-width:478px){
+            header{
+                width: 100%;
+                height: 89px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+            .navigation-div{
+                width: 428px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .navigation-component{
+                color: #2D2C2C;
+                font-size: 16px;
+                font-family: "Epilogue", sans-serif;
+                text-decoration: none;
+                display: none;
+        }
+         .img-menu{
+           display: block;
+        }
+        }
+    </style>

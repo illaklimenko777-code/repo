@@ -1,11 +1,128 @@
 ---
-import Welcome from '../components/Welcome.astro';
+
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Brefi from '../components/Brefi.astro';
+import  More  from '../components/More.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout>   
+    <Header></Header> 
+    <div class="conteiner">
+        <div class="conteiner-text">
+            <h1 class="hello">
+                HELLO <br> I’M ABBY
+            </h1>
+            <img class="for-disigner" src="/src/assets/for-disigner.png" alt="disigner-for.png">
+        </div>
+       <img class="woman" src="/src/assets/woman.png" alt="woman.png">
+    </div>
+    <div class="conteiner-brefis">
+        <div class="conteiner-brefis-son">
+            <Brefi>01.</Brefi>
+            <Brefi>02.</Brefi>
+            <Brefi>03.</Brefi>
+        </div>
+        <div class="conteiner-brefis-son">
+            <Brefi>04.</Brefi>
+            <Brefi>05.</Brefi>
+            <Brefi>06.</Brefi>
+        </div>
+    </div>
 </Layout>
+<style>
+    .conteiner{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hello{
+        font-size: 150px;
+        font-weight: bolder;
+        font-family: "Epilogue", sans-serif;
+    }
+    .conteiner-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner-brefis{
+        width: 100%;
+        height: 597px;
+        background-color: #131212;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .conteiner-brefis-son{
+        height: 156px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .conteiner-my-project{
+        width: 100%;
+        height: 2000px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction:column;
+    }
+    .big-text{
+        font-size: 120px;
+        font-weight: bolder;
+        color: #2d2d2d;
+        font-family: "Epilogue", sans-serif;
+    }
+    @media (max-width:1000px) {
+        .conteiner{
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+
+        }
+        .hello{
+            font-size: 75px;
+            font-weight: bolder;
+            font-family: "Epilogue", sans-serif;
+        }
+        .for-disigner{
+            width: 357px;
+            height: 104px;
+            margin-bottom: -150px;
+        }
+    .conteiner-brefis{
+        width: 100%;
+        height: 1500px;
+        background-color: #131212;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+       .conteiner-brefis-son{
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .woman{
+        width: 300px;
+        height: 300px;
+    }
+    
+    }
+</style>

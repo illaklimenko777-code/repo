@@ -1,0 +1,62 @@
+<div class="conteiner-component-bref">
+    <h1 class="number">
+        <slot></slot>
+    </h1>
+    <div class="conteiner-component-bref-text">
+        <h1 class="conteiner-component-bref-h1">Breifs</h1>
+        <p class="conteiner-component-bref-p">consectetur adipiscing elit duis <br> tristique sollicitudin nibh sit amet <br> commodo nulla facilisi nullam <br> vehicula ipsum a arcu cursus vitae <br> congue</p>
+    </div>
+</div>
+<style>
+    .conteiner-component-bref{
+        width: 440px;
+        height: 156px;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+    }
+    .conteiner-component-bref-text{
+        width: 325px;
+        height: 156px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+    }
+    .conteiner-component-bref-h1{
+        color: #fff;
+        font-size: 40px;
+        font-weight: lighter;
+        font-family: "Epilogue", sans-serif;
+      }
+      .number{
+        color: #fff;
+        font-size: 70px;
+        font-weight: lighter;
+        font-family: "Epilogue", sans-serif;
+      }
+      .conteiner-component-bref-p{
+         color: #fff;
+        font-size: 18px;
+        font-weight: lighter;
+        font-family: "Epilogue", sans-serif;
+      }
+       @media  (max-width:400px){
+        .conteiner-component-bref{
+        width: 375px;
+        height: 156px;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+    }
+    slot{
+        font-size: 30px;
+    }
+    .conteiner-component-bref-p{
+         color: #fff;
+        font-size: 14px;
+        font-weight: lighter;
+        font-family: "Epilogue", sans-serif;
+      }
+       }
+</style>
